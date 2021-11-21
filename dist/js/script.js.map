@@ -1,0 +1,1 @@
+{"version":3,"sources":["script.js"],"names":["console","log","$","on","alert","document","querySelector","addEventListener","e"],"mappings":"AAAAA,QAAQC,IAAI,YACZC,EAAE,QAAQC,GAAG,SAAS,KACpBC,MAAM,SAERC,SAASC,cAAc,QAAQC,kBAAkBC,IAC/CJ,MAAM","file":"script.js"}

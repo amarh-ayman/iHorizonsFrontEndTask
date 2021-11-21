@@ -1,0 +1,126 @@
+.news-first-section {
+  // height: calc($first-section-img-height + 100px);
+
+  .card-header {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 20px 0;
+    margin: 0;
+    .small-box {
+      width: 21px;
+      height: 13px;
+      background-color: #c7c7c7;
+      margin-left: 12px;
+      margin-top: 0.2rem;
+    }
+    ul {
+      a {
+        font-size: 1.1rem;
+
+        padding: 0.3rem 0.7rem;
+        // margin: 0 5rem;
+        background-color: #fbfbfb;
+        border: 1px solid $border-btn;
+      }
+    }
+  }
+  .row {
+    margin-top: 2rem;
+    // height: $first-section-img-height;
+    .carousel {
+      .carousel-item {
+        height: 100%;
+        img {
+          height: $first-section-img-height;
+          // transform:;
+        }
+      }
+      .arrow {
+        .btn {
+          background-color: rgba($color: gray, $alpha: 0.6);
+          border: 1px solid white;
+          margin-left: 35px;
+          i {
+            color: white;
+            font-size: 1.4rem;
+            padding: 0.4rem 0.2rem;
+          }
+        }
+      }
+    }
+    .card {
+      border: 0;
+      * {
+        border: 0;
+      }
+      height: $first-section-img-height;
+      .list-group {
+        font-size: 0.8rem;
+        border-radius: 0;
+        height: 100%;
+        overflow-y: hidden;
+        &-item {
+          border-bottom: 0.1rem solid $bg-color;
+          padding-right: 2rem !important;
+          padding-left: 0.5rem !important;
+          position: relative;
+          margin: 0 !important;
+
+          &-action {
+            background-color: transparent !important;
+          }
+          &:hover {
+            background-color: rgba($active-color, 0.2);
+          }
+          .news-paper_title {
+            margin-right: 1.4rem;
+            margin-top: -0.1rem;
+          }
+          // background-color: rebeccapurple;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background-color: $green-500;
+            top: 1rem;
+            right: 0.56rem;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            width: 0.1rem;
+            height: 100%;
+            background-color: $bg-color;
+            right: 1rem;
+          }
+        }
+      }
+    }
+  }
+  .news {
+    font-weight: 500;
+
+    small {
+      font-size: 12px;
+    }
+    .active {
+      p {
+        color: red !important;
+      }
+      .news-paper_title {
+        background-color: #01655b;
+        color: white !important;
+        border-color: #01655b !important;
+      }
+      // font-size: ;
+    }
+    .active {
+      background-color: rgba($active-color, 0.1) !important;
+    }
+  }
+  .carousel-caption {
+    height: 32%;
+  }
+}

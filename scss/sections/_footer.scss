@@ -1,0 +1,55 @@
+.arrow-up {
+  margin: 25px 0;
+  .btn {
+    background-color: rgba(white, $alpha: 0.6);
+    border: 2px solid rgba($bg-color-dark, 0.8);
+    font-size: 20px;
+    font-weight: 100;
+    i {
+      padding: 0 3px;
+      color: rgba($header-text-color, 0.7);
+    }
+  }
+}
+
+.footer {
+  border-top: 3px solid rgba($bg-color-dark, 0.5);
+  height: 40rem;
+  * {
+    color: rgba($header-text-color, 0.8);
+  }
+  &-element {
+    .col-4 {
+      display: flex;
+    }
+  }
+  .list-group {
+    padding: 0;
+    margin-top: 1.2rem;
+    display: inline-block;
+    &-item {
+      font-size: 0.9rem;
+      font-weight: 700;
+      border: none;
+      padding: 0;
+      a {
+        color: black;
+      }
+    }
+  }
+
+  &-contact {
+    font-weight: 600;
+    font-size: 0.8rem;
+    a {
+      position: relative;
+    }
+    .sm-border {
+      left: 0;
+      top: 35%;
+    }
+  }
+}
+.list-group {
+  display: inline-block;
+}

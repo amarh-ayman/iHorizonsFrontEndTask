@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500&family=Roboto:wght@300&family=Source+Code+Pro:ital,wght@1,600&display=swap");
+body {
+  overflow-x: hidden;
+  font-family: "Noto Kufi Arabic", sans-serif;
+  background-color: $bg-color;
+  * {
+    color: $header-text-color;
+    text-align: right;
+    justify-content: space-around;
+  }
+}
+
+.bg-gray {
+  background-color: $bg-color !important;
+}
+.border-left-1 {
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  border-right: 0 !important;
+}
+.border-right-1 {
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  border-left: 0 !important;
+}
+.border-top-1 {
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-bottom: 0 !important;
+}
+.border-bottom-1 {
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-top: 0 !important;
+}
+.gap-0-5 {
+  gap: 0.5rem;
+}
+
+.bg-gray {
+  background-color: $bg-color;
+  color: $secondary;
+  font-weight: 700;
+}
+.bg-black {
+  background-color: black !important;
+  color: white !important;
+  font-size: 1.3rem !important;
+}
+.section-design {
+  padding: 0.5rem 1.8rem 0;
+  margin-bottom: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  margin-top: 0.2rem;
+  border-radius: 50px;
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.carousel-indicators {
+  li {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+  }
+}
+.carousel {
+  &-caption {
+    position: absolute;
+    height: $carsoul-caption-height;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(black, 0.4);
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+      color: white;
+    }
+  }
+}
+.news-paper_title {
+  width: fit-content;
+  background-color: $bg-color;
+  color: rgb(207, 40, 40);
+  padding: 0 0.4rem 0 0.8rem;
+  border-right: 0.3rem solid rgb(207, 40, 40) !important;
+}
+.card {
+  border: none;
+}
+.card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: $secondary;
+}
+.card-header {
+  background-color: $bg-color-dark;
+  font-weight: 600 !important;
+  // font-size: 1rem !important;
+  color: $gray-dark;
+  min-height: 52px;
+}
+.text-black {
+  color: black !important;
+}
+.play {
+  position: absolute;
+
+  z-index: 1;
+  left: 1rem;
+  top: 10px;
+  border: 3px solid white;
+  border-radius: 10%;
+  display: flex;
+  i {
+    font-size: 14px;
+    color: white;
+  }
+  &-small {
+    padding: 0.2rem 0.6rem;
+    i {
+      font-size: 8px;
+    }
+  }
+  &-mid {
+    padding: 0.4rem 0.8rem;
+    i {
+      font-size: 12px;
+    }
+  }
+}
+
+.pictures {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba($color: black, $alpha: 0.4);
+  color: white;
+  top: 1.5rem;
+}

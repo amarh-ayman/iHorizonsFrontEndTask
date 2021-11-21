@@ -1,0 +1,39 @@
+.news-second-section {
+  margin-top: 30px;
+  // height: 100%;
+  // height: 70vh;
+
+  .row {
+    .card {
+      border: none;
+      position: relative;
+      img {
+        height: 100%;
+      }
+      .card-body {
+        text-align: right;
+        position: absolute;
+        // width: 100%;
+        height: 35%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(black, $alpha: 0.4);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        line-height: 0.2;
+
+        * {
+          color: white !important;
+        }
+      }
+    }
+    .card-deck {
+      .card {
+        margin: 0;
+        margin-left: 15px;
+      }
+    }
+  }
+}
