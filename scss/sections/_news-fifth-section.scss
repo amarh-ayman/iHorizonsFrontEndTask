@@ -1,7 +1,23 @@
 .news-fifth-section {
+  background-color: $bg-fifth-section;
+  // min-height: 80.3vh;
+  // height: fit-content;
   margin-top: 30px;
-  .carousel {
-    padding: 0;
+
+  .first {
     height: 100%;
+    .carousel {
+      padding: 0;
+      height: 100%;
+      img {
+        height: 100%;
+      }
+    }
+  }
+  .sceond {
+    height: 100%;
+    img {
+      height: 100%;
+    }
   }
 }

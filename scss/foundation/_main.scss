@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500&family=Roboto:wght@300&family=Source+Code+Pro:ital,wght@1,600&display=swap");
 body {
-  overflow-x: hidden;
+  // overflow-x: hidden;
   font-family: "Noto Kufi Arabic", sans-serif;
   background-color: $bg-color;
   * {
@@ -13,6 +13,7 @@ body {
 .bg-gray {
   background-color: $bg-color !important;
 }
+
 .border-left-1 {
   border-top: 0 !important;
   border-bottom: 0 !important;
@@ -66,12 +67,20 @@ body {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
-  border-radius: 5px;
+  // border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.sm-border {
+  position: absolute;
+  top: 10%;
+  width: 1.4px;
+  height: 0.8rem;
+  background-color: rgba($border-btn, 0.6);
 }
 
 .carousel-indicators {
@@ -90,10 +99,14 @@ body {
     right: 0;
     bottom: 0;
     background-color: rgba(black, 0.4);
+    height: fit-content;
+
     p {
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
+      font-weight: 700;
       color: white;
+      padding: 0 0 0.8rem;
     }
   }
 }
@@ -101,23 +114,27 @@ body {
   width: fit-content;
   background-color: $bg-color;
   color: rgb(207, 40, 40);
-  padding: 0 0.4rem 0 0.8rem;
+  min-width: 4.5rem;
   border-right: 0.3rem solid rgb(207, 40, 40) !important;
+  border-left: 0.3rem solid transparent;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
 }
 .card {
   border: none;
 }
 .card-title {
-  font-size: 1rem;
+  font-size: 0.965rem;
   font-weight: 700;
   color: $secondary;
 }
 .card-header {
   background-color: $bg-color-dark;
   font-weight: 600 !important;
-  // font-size: 1rem !important;
+  font-size: 1.1rem;
   color: $gray-dark;
-  min-height: 52px;
+  min-height: 3.8rem;
 }
 .text-black {
   color: black !important;
@@ -133,12 +150,13 @@ body {
   display: flex;
   i {
     font-size: 14px;
-    color: white;
+    color: #fffffb;
   }
   &-small {
-    padding: 0.2rem 0.6rem;
+    padding: 0.1rem 0.3rem;
+    border-width: 2.5px;
     i {
-      font-size: 8px;
+      font-size: 7px;
     }
   }
   &-mid {
@@ -152,7 +170,7 @@ body {
 .pictures {
   position: absolute;
   z-index: 1;
-  background-color: rgba($color: black, $alpha: 0.4);
+  background-color: rgba($color: black, $alpha: 0.6);
   color: white;
   top: 1.5rem;
 }

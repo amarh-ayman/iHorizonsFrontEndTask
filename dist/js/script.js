@@ -1,2 +1,2 @@
-console.log("kkkkkkkk"),$(".btn").on("click",(()=>{alert("hh")})),document.querySelector(".btn").addEventListener((e=>{alert("ff")}));
+alert("kkkkkk");let width=.8,left=5;$(document).ready((function(){function w(){$(window).width()>=1600&&$(window).width()<1700&&(width=.82),$(window).width()>=1400&&$(window).width()<1600&&(width=.87),$(window).width()>=600&&$(window).width()<1400&&(width=.89),$(window).width()<=600&&(width=.95),$(".container").css("maxWidth",$(window).width()*width+"px"),$(window).width()>=1600?a+=.01:a=.8,alert(left),$(".social-media-links").css({left:left-10*width+"%"})}w(),alert("ll"),$(window).bind("resize",w)}));
 //# sourceMappingURL=script.js.map

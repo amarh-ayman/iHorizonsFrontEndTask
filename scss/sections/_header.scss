@@ -1,9 +1,12 @@
 .jumbotron {
-  // background-color: rebeccapurple;
-  padding: 7px 0 1px;
-  margin-top: 46px;
-  margin-bottom: 13px;
-
+  height: 6.7rem;
+  ul {
+    width: 25rem;
+    .sm-border {
+      width: 2px;
+      height: 0.9rem;
+    }
+  }
   .nav-link {
     padding: 0;
     text-transform: capitalize;
@@ -15,14 +18,12 @@
   }
   .nav-item {
     padding: 0;
-    margin: 0 0.5rem;
     position: relative;
     a {
-      // background-color: aqua;
       padding: 0;
-      padding-right: 1rem;
+      padding-right: 0.7rem;
       font-size: 11.5px;
-      font-weight: 500;
+      font-weight: 600;
       text-transform: uppercase;
     }
   }
@@ -30,7 +31,7 @@
     border: 1px solid $border-btn !important;
     border-radius: 10% /50% !important;
     margin-bottom: -2px;
-
+    margin-right: 3px;
     a {
       margin: 1px 0;
       padding: 0 0.7rem;
@@ -41,20 +42,19 @@
     }
   }
 }
-.sm-border {
-  position: absolute;
-  top: 20%;
-  width: 1px;
-  height: 9px;
-  background-color: $border-btn;
-}
 
 .nav-section {
-  padding: 20px 0;
+  height: 11.1rem;
+  // padding: 20px 0;
 
   * {
     color: $nav-color;
     font-weight: 600;
+  }
+  .navbar-toggler {
+    i {
+      font-size: 1.8rem;
+    }
   }
   i {
     font-size: 1.4rem;

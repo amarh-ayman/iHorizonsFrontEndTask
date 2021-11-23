@@ -1,6 +1,4 @@
 .news-first-section {
-  // height: calc($first-section-img-height + 100px);
-
   .card-header {
     font-size: 0.9rem;
     font-weight: 500;
@@ -28,10 +26,17 @@
     margin-top: 2rem;
     // height: $first-section-img-height;
     .carousel {
+      &-inner {
+        position: relative;
+        width: 100%;
+      }
       .carousel-item {
         height: 100%;
+        width: 100%;
         img {
-          height: $first-section-img-height;
+          min-height: $first-section-img-height;
+          max-height: 100%;
+          width: 100%;
           // transform:;
         }
       }
@@ -106,9 +111,6 @@
       font-size: 12px;
     }
     .active {
-      p {
-        color: red !important;
-      }
       .news-paper_title {
         background-color: #01655b;
         color: white !important;
@@ -121,6 +123,6 @@
     }
   }
   .carousel-caption {
-    height: 32%;
+    min-height: 32%;
   }
 }
