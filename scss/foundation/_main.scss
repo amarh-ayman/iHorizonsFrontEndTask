@@ -174,3 +174,11 @@ body {
   color: white;
   top: 1.5rem;
 }
+.active {
+  .news-paper_title {
+    background-color: #01655b;
+    color: white !important;
+    border-color: #01655b !important;
+  }
+  background-color: rgba($active-color, 0.1) !important;
+}

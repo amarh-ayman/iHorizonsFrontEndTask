@@ -1,0 +1,29 @@
+.modal {
+  &-dialog {
+    .close {
+      position: absolute;
+      top: -1rem;
+      right: 5rem;
+      color: red;
+      width: 2rem;
+      height: 2rem;
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      border: 2px solid black;
+      border-radius: 50%;
+      background-color: white;
+      outline: none;
+      opacity: 1;
+    }
+  }
+  &-body {
+    padding: 0;
+    .footer {
+      height: fit-content;
+    }
+  }
+  &-footer {
+  }
+}

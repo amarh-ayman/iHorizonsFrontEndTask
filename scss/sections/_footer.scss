@@ -16,6 +16,9 @@
 }
 
 .footer {
+  .active {
+    background-color: transparent !important;
+  }
   border-top: 3px solid rgba($bg-color-dark, 0.5);
   height: 85vh;
   * {

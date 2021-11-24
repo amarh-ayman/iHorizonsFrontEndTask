@@ -46,7 +46,9 @@
 .nav-section {
   height: 11.1rem;
   // padding: 20px 0;
-
+  .active {
+    background-color: transparent !important;
+  }
   * {
     color: $nav-color;
     font-weight: 600;

@@ -87,7 +87,7 @@
               id="collapsibleNavbar"
             >
               <!-- <div class="col-lg-11"> -->
-              <ul class="navbar-nav d-flex p-0 justify-content-between w-100">
+              <ul class="navbar-nav d-flex p-0 justify-content-between align-items-center w-100 ">
                 <li class="nav-item">
                   <a class="nav-link active" href="#">
                     <i class="fas fa-home active"></i>
@@ -111,23 +111,9 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">قطر 2022</a>
                 </li>
-                <li
-                  class="nav-item btn"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
+                <button type="button" class="btn" data-toggle="modal" data-target="#myModal">
                   <i class="fas fa-bars"></i>
-
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Separated link</a>
-                  </div>
-                  <!-- </div> -->
-                </li>
+                </button>
               </ul>
               <div class="col-lg-2 search p-0 m-0 text-left">
                 <nav class="sm-border"></nav>
@@ -139,7 +125,209 @@
         </div>
       </section>
 
-      <div class="social-media-links m- d-none d-xl-flex" >
+
+      <!-- Start Model -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-xl ">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            
+            <!-- Modal body -->
+            <div class="modal-body" >
+              <section class="footer my-1" >
+                <!-- <div class="row bg-white m-0"> -->
+                  <div class="container pt-3" style="padding-bottom: 2.67rem">
+                    <div class="row d-flex">
+                    <div class="col-3">
+                      <img
+                          src="imgs/logo/01.PC-Arabic-Home_MenuExpand-2.png"
+                          alt=""
+                        />
+                    </div>
+                    <div class="col-9 d-flex flex-column">
+                      <div class="social-media-links row" style="position:relative; top: 0;right: 0; width: 30rem;" >
+                        <ul class="navbar-nav d-flex flex-row justify-content-between p-2 pr-4 w-100" >
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-youtube"></i></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-rss"></i></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-pinterest"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                      
+                      <div class="input-group md-form form-sm bg-gray form-2 pl-0">
+                        <input class="form-control my-0 py-1 bg-gray" type="text" placeholder="بحث" aria-label="Search" style="border: 0;">
+                        <div class="input-group-append">
+                          <button class="input-group-text red lighten-3 " id="basic-text1" style="border: 0; left: 2rem;">
+                            <i class="fas fa-search text-grey"
+                              aria-hidden="true"></i>
+                            </button>
+                        </div>
+                      </div>
+                      <div class=" d-flex flex-row footer-element">
+                        <div class="col-4">
+                          <ul class="list-group">
+                            <li class="list-group-item">
+                              <a class="nav-link active" href="#">الرئيسية</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a class="nav-link active" href="#">تسجيل الدخول</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a class="nav-link active" href="#">قطر</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a class="nav-link active" href="#">عام</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a class="nav-link active" href="#">اقتصاد</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a class="nav-link active" href="#">رياضه</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a class="nav-link active" href="#">منوعات</a>
+                            </li>
+                          </ul>
+                        </div>
+        
+                        <div class="col-4 p-0">
+                          <ul class="list-group">
+                            <li class="list-group-item">
+                              <a class="nav-link active" href="#"> البث المباشر </a>
+                            </li>
+                            <li class="list-group-item">
+                              <a class="nav-link active" href="#"> قطر 2022</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a class="nav-link active" href="#"> الوسائط المتعددة</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a class="nav-link active" href="#"> رؤوية قطر 2030</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a class="nav-link active" href="#"> التصويت</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-4 p-0">
+                          <ul class="list-group">
+                            <li class="list-group-item">
+                              <a class="nav-link" href="#">ادارة العلاقات الاعلامية</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a class="nav-link active" href="">
+                                إدارة شؤون الإعلام الخاجي</a
+                              >
+                            </li>
+                            <li class="list-group-item">
+                              <a class="nav-link active" href="">
+                                المؤسسات الإعلامية
+                              </a>
+                            </li>
+                            <li class="list-group-item">
+                              <a class="nav-link active" href="">الدورات التدريبية </a>
+                            </li>
+                            <li class="list-group-item">
+                              <a class="nav-link active" href=""
+                                >المراسلون والمكاتب الإعلامية
+                              </a>
+                            </li>
+                            <li class="list-group-item">
+                              <a class="nav-link active" href="">المؤتمرات والمعارض</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                <!-- </div> -->
+              </section>
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer bg-gray" >
+              <div class="row w-100 m-0 footer-contact  p-0">
+                <div class="container d-flex flex-row pt-2 m-0">
+                  <!-- <div class="row m-0"> -->
+                    <div class="col-lg-6 p-0 m-0">
+                      <ul class="nav p-0 flex-row justify-content-start">
+                        <li class="nav-item">
+                          <a href="" class="nav-link"
+                            >من نحن
+                            <nav class="sm-border"></nav
+                          ></a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="" class="nav-link">
+                            الوظائف الشاغرة
+                            <nav class="sm-border"></nav
+                          ></a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="" class="nav-link"
+                            >اتصل بنا
+                            <nav class="sm-border"></nav
+                          ></a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="" class="nav-link">
+                            خريطة الموقع
+                            <nav class="sm-border"></nav
+                          ></a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="" class="nav-link"> تيسير التصفح</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6 m-0  p-0">
+                      <ul class="nav p-0 flex-row justify-content-end">
+                        <li class="nav-item">
+                          <a href="" class="nav-link">
+                            اتفاقية استخدام الموقع
+                            <nav class="sm-border"></nav>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="" class="nav-link">سياسة الخصوصية </a>
+                        </li>
+                      </ul>
+                    </div>
+                  <!-- </div> -->
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <!-- end Model -->
+
+      <div class="social-media-links m-0 d-none d-xl-flex" >
         <ul class="navbar-nav d-flex justify-content-between">
           <li class="nav-item">
             <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
@@ -175,47 +363,62 @@
           <div class="container  p-0">
             <!-- title -->
             <div
+            id="news-first-section"
               class="
+              carousel slide carousel-fade
                 card-header
                 d-flex
                 justify-content-between
                 align-items-end
-                bg-gray
-              "
-            >
-              <div class="col-lg-8  col-9 w-100 d-flex flex-column flex-xl-row justify-content-start">
-                <div class="d-flex flex-row justify-content-start">
-                  <nav class="small-box"></nav>
-                  <p>شريط الاخبار  <span style="margin:0 7px">: </span>   </p>
-                </div>
+                p-0
 
-                <p>مشاركون في منتدى الدوحة يتوقعون تراجع النمو العالمي ب 2019</p>
+              "
+              data-ride="carousel"
+              data-interval="1000"
+            >
+            <!-- news nav section  -->
+              <div class=" navbar-news-carousel col-lg-8 col-9 w-100 d-flex flex-column flex-xl-row align-items-start  justify-content-start p-0" >
+                  <div class="  row  m-0 "  style="width: 10rem;">
+                    <nav class="small-box"></nav>
+                    <p class="">شريط الاخبار  :</p>
+                  </div>
+                   <div class="carsoul-inner w-75 " >
+                  <div class="carousel-item active text-center ">
+                    <p>مشاركون في منتدى الدوحة يتوقعون تراجع النمو العالمي ب 2019</p>
+                    </div>
+                  <div class="carousel-item  text-center ">
+                      <p>المظاهرات مستمرة</p>
+                    </div>
+                  <div class="carousel-item  text-center ">
+                      <p>بسم الله الرحمن الرحيم</p>
+                    </div>
+                  </div>
               </div>
+            <!--font awesome  -->
               <div
                 class="
                   col-xl-2 col-3
                   p-0
                   d-flex
-                  justify-content-end
-                  align-items-start
+                  align-self-end
                 "
+               
                 style="margin-top: -10px"
               >
-                <ul class="nav p-0" style="width: 9rem;">
-                  <!-- <li class="nav-item bg-black"> -->
-                  <a class="nav-link btn rounded-circle m-0" href="#">
-                    <i class="fas fa-angle-up"></i>
-                  </a>
-                  <!-- </li> -->
-                  <!-- <li class="nav-item"> -->
-                  <a class="nav-link btn rounded-circle m-0" href="#">
-                    <i class="fas fa-angle-down"></i>
-                  </a>
-                  <!-- </li> -->
+                <ul class="nav p-0 " >
+                  <li class="nav-link btn rounded-circle m-0 " href="#news-first-section" role="button" data-slide="prev">
+                    <i class=" fas fa-angle-up" aria-hidden="true"></i>
+                    <span class="sr-only">Previous</span>
+                </li>
+                <li class="nav-link btn rounded-circle m-0  " href="#news-first-section" role="button" data-slide="next">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    <span class="sr-only">Next</span>
+                </li>
+                
                   <!-- <li class="nav-item bg-primary"> -->
-                  <a class="nav-link btn rounded-circle m-0" href="#">
+                  <li class="nav-link btn rounded-circle  btn-customized m-0" href="#">
                     <i class="fas fa-pause"></i>
-                  </a>
+                  </li>
                   <!-- </li> -->
                 </ul>
               </div>
@@ -354,7 +557,7 @@
                         </p>
                       </div>
                     </a>
-                    <a href="#" class="list-group-item nav-link d-flex p-0">
+                    <a href="#" class=" list-group-item nav-link d-flex p-0">
                       <div class="list-group-item-action flex-column my-3 mx-1">
                         <div
                           class="
@@ -556,17 +759,17 @@
           <div class="container h-100 p-0">
             <div class="row h-100 p-0 m-0">
               <!-- left sections -->
-              <div class="col-xl-8 col-12 p-0 m-0  news h-100 bg-white">
+              <div class="col-xl-8 col-12 p-0 m-0  news h-100  bg-white">
                 <!-- title -->
                 <div class="card-header bg-white">
                   <p>عناوين اخرى</p>
                 </div>
-                <div class="row mt-0 m-4 p-0 ">
+                <div class="row d-flex h-100  mt-0 m-3 m-4 p-0 ">
                   <!-- first -->
-                <div class="card-deck row first d-flex align-items-start p-0 m-0">
+                <div class="row h-100  first d-flex flex-column flex-xl-row align-items-start cl-12 p-0 m-0">
                   <!-- left top section -->
-                  <div class="card col-xl-8 col-12 d-flex flex-column p-0   ml-xl-3 ">
-                    <div class="card border border-bottom-1 m-0 ">
+                  <div class="card col-xl-7 col-12 d-flex flex-column  p-0 ">
+                    <a class="nav-link card border border-bottom-1 m-0 ">
                       <div class="card-display">
                         <div class="img col-6 " style="position: relative">
                           <li class="nav-link play play-small">
@@ -590,8 +793,8 @@
                           </p>
                         </div>
                       </div>
-                    </div>
-                    <div class="card-display border border-bottom-1 pb-4 p-lg-0">
+                    </a>
+                    <a class="nav-link card-display border border-bottom-1 pb-4 p-lg-0">
                       <div class="card-display">
                         <div class="img col-6">
                           <img
@@ -612,12 +815,12 @@
                           </p>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div
-                    class="card col-xl-4 col-12 d-flex flex-column p-0 m-xl-0 m-3"
+                    class="left card col-xl-4 col-12 d-flex  flex-column p-0 m-lg-0  mb-3"
                   >
-                    <div class="card border border-bottom-1">
+                    <a class="nav-link  card border border-bottom-1">
                       <div class="card-display">
                         <div class="card-body">
                           <h5 class="card-title">
@@ -631,8 +834,8 @@
                           </p>
                         </div>
                       </div>
-                    </div>
-                    <div class="card">
+                    </a>
+                    <a class="nav-link  card">
                       <div class="card-display">
                         <div class="card-body">
                           <h5 class="card-title">
@@ -646,14 +849,14 @@
                           </p>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
                 <!-- end of left top -->
 
                 <!-- left bottom section    second-->
                 <div
-                  class="row second bg-white my-3 m-xl-0   p-0  align-self-end"
+                  class="row second bg-white m-xl-0 p-0 "
                 >
                   <div
                     class="
@@ -677,7 +880,7 @@
                         "
                       >
                         <div class="d-flex w-100 justify-content-between">
-                          <h5 class="active">
+                          <h5 class="">
                             قرصنة جنود الاحتلال... نهبممتلكات الفلسطينيين في الضفة
                             الغربية
                           </h5>
@@ -694,7 +897,7 @@
                           list-group-item list-group-item-action
                           flex-column
                           align-items-start
-                          active
+                          
                         "
                       >
                         <div class="d-flex w-100 justify-content-between">
@@ -715,7 +918,6 @@
                           list-group-item list-group-item-action
                           flex-column
                           align-items-start
-                          active
                         "
                       >
                         <div class="d-flex w-100 justify-content-between">
@@ -736,7 +938,7 @@
                           list-group-item list-group-item-action
                           flex-column
                           align-items-start
-                          active
+                          
                         "
                       >
                         <div class="d-flex w-100 justify-content-between">
@@ -773,11 +975,11 @@
                           list-group-item list-group-item-action
                           flex-column
                           align-items-center
-                          active
+                        
                         "
                       >
                         <div class="d-flex w-100 justify-content-around">
-                          <p class="active">
+                          <p class="">
                             المظاهرات مستمرة... غالبية الفرنسيين لم تقنعهم تنازلات
                             الرئيس
                           </p>
@@ -949,8 +1151,8 @@
               </div>
               </div>
               <!-- right sections -->
-              <div class="col-12 col-xl-4 d-flex p-0  m-lg-0 social-media">
-                <div class="row d-flex justify-content-end h-100 m-0">
+              <div class="col-12 col-xl-4 d-flex p-0  m-xl-0 social-media">
+                <div class="row d-flex justify-content-end h-100  m-0">
                   <!-- right top -->
                   <div class="col-xl-11 col-12 social-media-twitter m-lg-0   p-0">
                     <div class="card-header bg-white">
@@ -1085,6 +1287,8 @@
                       col-xl-11 col-12
                       bg-white
                       p-0
+                      
+                      m-xl-0 mt-lg-4
                       social-media-instagram
                     "
                   >
@@ -1096,6 +1300,7 @@
                         card-group-container
                         m-0
                         d-flex
+                        
                         flex-column
                         justify-content-start
                       "
@@ -1162,11 +1367,11 @@
         <!-- =  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////
       fourth section  slider  nav  
     //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-        <section class="news-fourth-section  mt-lg-4 card-display">
+        <section class="news-fourth-section  mt-xl-4 card-display">
           <div class="container h-100 bg-white p-0">
             <nav class="card-header m-0 nav bg-white" id="nav-tab" role="tablist">
               <a
-                class="nav-item nav-link active"
+                class="nav-item nav-link"
                 id="nav-first-tab"
                 data-toggle="tab"
                 href="#nav-first"
@@ -1312,20 +1517,21 @@
       fifth section     
     //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
         <section class="news-fifth-section ">
-          <div class="container h-100 p-0">
-            <div class="row h-100 bg-black m-0">
-              <div class="col-lg-9 col-sm-12 p-0 first">
+          <div class="container h-100  p-0">
+            <div class="row h-100  m-0">
+              <!-- img carousel -->
+              <div class="col-lg-9 col-sm-12 p-0  h-90 first">
                 <div
-                  id="carouselExampleSlidesOnly"
+                  id="news-fifth-section-pictures"
                   class="carousel fide"
                   data-ride="carousel"
                   data-interval="4000"
                 >
                   <li class="nav-link pictures">الصور</li>
                   <ul class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
+                    <li data-target="#news-fifth-section-pictures" data-slide-to="0" class="active"></li>
+                    <li data-target="#news-fifth-section-pictures" data-slide-to="1"></li>
+                    <li data-target="#news-fifth-section-pictures" data-slide-to="2"></li>
                   </ul>
                   <div class="carousel-inner h-100">
                     <div class="carousel-item active" style="height: 100%">
@@ -1367,10 +1573,11 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-sm-12 p-0 second">
+              <!-- video -->
+              <div class="col-lg-3 col-sm-12 p-0 h-50 second bg-black ">
                 <div class="card-header bg-black text-white pt-3">الفيديو</div>
-                <div class="card-deck h-90 flex-column m-0">
-                  <div class="card h-50 border border-bottom-1 mb-3">
+                <div class=" d-flex flex-column m-0">
+                  <div class="card  border border-bottom-1 mb-3">
                     <li class="nav-link play play-small">
                       <i class="fas fa-play"></i>
                     </li>
@@ -1386,7 +1593,7 @@
                       </h5>
                     </div>
                   </div>
-                  <div class="card h-50 p-0">
+                  <div class="card p-0">
                     <li class="nav-link play play-small">
                       <i class="fas fa-play"></i>
                     </li>
@@ -1509,7 +1716,7 @@
 
         <div class="row m-0 footer-contact">
           <div class="container pt-2">
-            <div class="row px-5">
+            <div class="row m-0">
               <div class="col-lg-6 p-0">
                 <ul class="nav p-0 flex-row justify-content-start">
                   <li class="nav-item">
@@ -1541,7 +1748,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-lg-6 p-0">
+              <div class="col-lg-6 m-0  pr-4">
                 <ul class="nav p-0 flex-row justify-content-end">
                   <li class="nav-item">
                     <a href="" class="nav-link text-black"
@@ -1564,8 +1771,9 @@
           </div>
         </div>
       </section>
-  
-
+      
+     
+    
     <!-- =  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////
        End
     //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
@@ -1574,8 +1782,9 @@
     <script >
      
   let width = 0.8;
-  let left = 1;
+  let left = 8;
   $(document).ready(function () {
+    
     setMaxWidth();
     $(window).bind("resize", setMaxWidth); //Remove this if it's not needed. It will react when window changes size.
     function setMaxWidth() {
@@ -1589,9 +1798,31 @@
       $(".social-media-links").css({
         'left': `${ width * 10-width*left}%`,
       });
-   
     }
+    left=3;
   });
+
+  $('.btn-customized').on('click', function(){
+ 
+      if( ! $(this).hasClass('paused') ) {
+          $('#news-first-section').carousel('pause');
+          $('.btn-customized').toggleClass('paused');
+          $('.btn-customized i').removeClass('fa-pause').addClass('fa-play');
+          $(this).blur();
+      }
+      else {
+          $('#news-first-section').carousel('cycle');
+          $('.btn-customized').toggleClass('paused');
+          $('.btn-customized i').removeClass('fa-play').addClass('fa-pause');
+          $(this).blur();
+      }
+});
+
+  $(' a').on('click',function(e){
+    e.preventDefault()
+    $(this).closest('a').addClass('active');
+   
+  })
     </script>
   </body>
 </html>

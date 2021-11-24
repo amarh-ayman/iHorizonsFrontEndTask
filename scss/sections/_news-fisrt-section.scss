@@ -1,9 +1,29 @@
 .news-first-section {
   .card-header {
+    .active {
+      background-color: transparent !important;
+    }
+    background-color: transparent;
+    height: fit-content;
     font-size: 0.9rem;
     font-weight: 500;
-    padding: 20px 0;
     margin: 0;
+    padding-bottom: 0.5rem !important;
+    padding-top: 0.5rem !important;
+    .navbar-news-carousel {
+      .carsoul-inner {
+        * {
+          overflow: hidden;
+          display: -webkit-box !important;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          white-space: normal;
+        }
+        margin-right: 1rem;
+        // height: fit-content;
+        padding: 0;
+      }
+    }
     .small-box {
       width: 21px;
       height: 13px;
@@ -12,13 +32,20 @@
       margin-top: 0.2rem;
     }
     ul {
-      a {
-        font-size: 1.1rem;
-
-        padding: 0.3rem 0.7rem;
-        // margin: 0 5rem;
+      width: 8rem;
+      height: fit-content;
+      li {
+        font-size: 1.2rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        opacity: 1;
         background-color: #fbfbfb;
         border: 1px solid $border-btn;
+        i {
+          // padding: 0.2rem 0.1rem;
+        }
       }
     }
   }
@@ -30,7 +57,7 @@
         position: relative;
         width: 100%;
       }
-      .carousel-item {
+      &-item {
         height: 100%;
         width: 100%;
         img {
@@ -109,17 +136,6 @@
 
     small {
       font-size: 12px;
-    }
-    .active {
-      .news-paper_title {
-        background-color: #01655b;
-        color: white !important;
-        border-color: #01655b !important;
-      }
-      // font-size: ;
-    }
-    .active {
-      background-color: rgba($active-color, 0.1) !important;
     }
   }
   .carousel-caption {
