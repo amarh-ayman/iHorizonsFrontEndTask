@@ -1676,16 +1676,18 @@
             $(this).closest('a').addClass('active');
           })
         
-        $('#demo > .carousel-indicators > li').popover({
+        $(' .carousel-indicators > li').popover({
             placement : 'top',
             trigger : 'hover',
             html : true,
             content : function (){
-                let dataSlideTo=$(this).attr('data-slide-to');
-                $mainDivHover=$('#demo > .carousel-inner >.carousel-item').eq(dataSlideTo);
+                $id =$(this).parentsUntil('[data-ride="carousel"]').parent().attr('id');
+
+                $dataSlideTo=$(this).attr('data-slide-to');
+                $mainDivHover=$(`#${$id} > .carousel-inner >.carousel-item`).eq($dataSlideTo);
                 $contentOfIndicator=$mainDivHover.text()
                 $imgsrc = $mainDivHover.find('img').attr('src') ;
-                console.log($imgsrc);
+
                 return `<div class="media"><img src="${$imgsrc}" class="mr-3" alt="Sample Image"><div class="media-body"><p>${$contentOfIndicator}</p></div></div>`
                }
               }
