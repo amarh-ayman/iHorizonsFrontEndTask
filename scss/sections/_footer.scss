@@ -1,7 +1,6 @@
 .arrow-up {
-  height: 16.1vh;
-  display: flex;
-  align-items: center;
+  // height: 16.1vh;
+  padding: 2rem 0;
   // margin: 25px 0;
   .btn {
     background-color: rgba(white, $alpha: 0.6);
@@ -20,7 +19,7 @@
     background-color: transparent !important;
   }
   border-top: 3px solid rgba($bg-color-dark, 0.5);
-  height: 85vh;
+
   * {
     color: rgba($header-text-color, 0.8);
   }
@@ -49,7 +48,7 @@
 
   &-contact {
     font-weight: 600;
-    font-size: 0.8rem;
+    // font-size: 0.8rem;
     a {
       position: relative;
     }

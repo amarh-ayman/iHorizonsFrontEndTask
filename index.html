@@ -25,14 +25,14 @@
     <link rel="stylesheet" href="dist/css/index.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body >
     
       <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////
             Header
     //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-      <section class="jumbotron d-flex justify-content-end p-0 m-0">
-        <div class="container  d-flex align-self-end p-0">
-          <div class="row w-100 m-0 mb-3 d-flex align-items-end justify-content-between">
+      <section class="jumbotron d-flex align-items-end  pb-0">
+        <div class="container h-100  p-0">
+          <div class="row w-100 m-0 mb-3 d-xl-flex d-none align-items-end justify-content-between">
             <a href="" class="nav-link d-none d-lg-flex lang font-weight-bolder">English</a>
             <ul class="nav align-items-end d-none d-lg-flex">
               <li class="nav-item btn">
@@ -51,11 +51,11 @@
         </div>
       </section>
 
-      <section class="nav-section nav bg-white">
+      <section class="nav-section nav bg-white " >
         <div class="container p-0 d-flex justify-content-center ">
           <nav
             class="
-              navbar navbar-expand-lg
+              navbar navbar-expand-xl
               d-flex
               flex-row
               justify-content-between
@@ -65,7 +65,7 @@
             "
           >
             <!-- Brand -->
-            <a class="col-3 p-0 navbar-brand m-0" href="#"
+            <a class="col-lg-3 col-md-5 col-8 p-0 navbar-brand m-0 " href="#"
               ><img
                 class="navbar-brand m-0"
                 src="imgs/logo/headerLogo.png"
@@ -83,10 +83,10 @@
 
             <!-- Navbar links -->
             <div
-              class="col-lg-9 collapse navbar-collapse px-5 d-none d-lg-flex
+              class="col-lg-9 collapse navbar-collapse px-5  "
               id="collapsibleNavbar"
             >
-              <ul class="navbar-nav d-flex p-0 justify-content-between align-items-center w-100 ">
+              <ul class="navbar-nav   d-flex p-0 justify-content-between align-items-center w-100 ">
                 <li class="nav-item">
                   <a class="nav-link active" href="#">
                     <i class="fas fa-home active"></i>
@@ -114,8 +114,8 @@
                   <i class="fas fa-bars"></i>
                 </button>
               </ul>
-              <div class="col-lg-2 search p-0 m-0 text-left">
-                <nav class="sm-border"></nav>
+              <div class="col-lg-2  search p-0 m-0 text-left  d-flex">
+                <nav class="sm-border" style="right: 3rem;"></nav>
                 <i class="fas fa-search"></i>
               </div>
             </div>
@@ -357,13 +357,13 @@
         <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////
           News - first page     
       //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-        <section class="news-first-section">
-          <div class="container  p-0">
+        <section class="news-first-section mt-lg-5">
+          <div class="container h-100  p-0">
             <!-- title -->
             <div
             id="news-first-section"
               class="
-                 carousel slide carousel-fade
+                 carousel  carousel-fade 
                 card-header
                 d-flex
                 justify-content-between
@@ -371,10 +371,10 @@
                 p-0
               "
               data-ride="carousel"
-              data-interval="1000"
+              data-interval="3000"
             >
             <!-- news nav section  -->
-              <div class=" navbar-news-carousel col-lg-8 col-9 w-100 d-flex flex-column flex-xl-row align-items-start  justify-content-start p-0" >
+              <div class=" navbar-news-carousel col-8 w-100 d-flex flex-column flex-xl-row align-items-start  justify-content-start p-0" >
                   <div class="  row  m-0 "  style="width: 10rem;">
                     <nav class="small-box"></nav>
                     <p class="">شريط الاخبار  :</p>
@@ -394,7 +394,7 @@
             <!--font awesome  -->
               <div
                 class="
-                  col-xl-2 col-3
+                   col-4
                   p-0
                   d-flex
                   align-self-end
@@ -402,31 +402,29 @@
                
                 style="margin-top: -10px"
               >
-                <ul class="nav p-0 " >
-                  <li class="nav-link btn rounded-circle m-0 " href="#news-first-section" role="button" data-slide="prev">
+                <ul class="nav p-0 movement-carousel" >
+                  <li class="nav-link btn rounded-circle m-0 move" href="#news-first-section" role="button" data-slide="prev">
                     <i class=" fas fa-angle-up" aria-hidden="true"></i>
                     <span class="sr-only">Previous</span>
                 </li>
-                <li class="nav-link btn rounded-circle m-0  " href="#news-first-section" role="button" data-slide="next">
-                    <i class="fas fa-angle-down" aria-hidden="true"></i>
-                    <span class="sr-only">Next</span>
-                </li>
+                  <li class="nav-link btn rounded-circle m-0  move" href="#news-first-section" role="button" data-slide="next">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                      <span class="sr-only">Next</span>
+                  </li>
                 
-                  <!-- <li class="nav-item bg-primary"> -->
                   <li class="nav-link btn rounded-circle  btn-customized m-0" href="#">
                     <i class="fas fa-pause"></i>
                   </li>
-                  <!-- </li> -->
                 </ul>
               </div>
             </div>
             <!-- main -->
-            <div class="row d-flex justify-content-between  m-0 mt-3">
+            <div class="row h-100 d-flex justify-content-between   m-0 mt-3" >
               <!-- carousel -->
-              <div class="col-xl-8 col-12 p-0  m-0 mb-4">
+              <div class="col-xl-8 col-12 p-0 m-0 mb-3 mb-lg-0" >
                 <div
                   id="demo"
-                  class="carousel slide w-100 d-flex justify-content-center"
+                  class="carousel slide w-100 d-flex justify-content-center h-100"
                   data-ride="carousel"
                   data-interval="6000"
                 >
@@ -441,8 +439,13 @@
                     <li data-target="#demo" data-slide-to="6"></li>
                     <li data-target="#demo" data-slide-to="7"></li>
                   </ul>
-                  <div class="carousel-inner bg-black">
-                    <li class="nav-link play"><i class="fas fa-play"></i></li>
+                  <div class="carousel-inner ">
+                    <li class="nav-link play d-none d-sm-inline-block"><i class="fas fa-play"></i></li>
+
+                    <li class="nav-link play play-small d-sm-none d-inline-block">
+                      <i class="fas fa-play"></i>
+                    </li>
+
                     <div class="carousel-item active">
                       <img src="imgs/first-secImg/download.jpeg" />
                       <div class="carousel-caption">
@@ -496,31 +499,33 @@
                     </div>
                   </div>
 
-                  <a
-                    class="carousel-control-prev arrow"
-                    href="#demo"
-                    data-slide="prev"
-                  >
-                    <button class="btn rounded-circle">
-                      <i class="fas fa-arrow-left"></i>
-                    </button>
-                  </a>
-
-                  <a
-                    class="carousel-control-next arrow"
-                    href="#demo"
-                    data-slide="next"
-                  >
-                    <button class="btn rounded-circle">
-                      <i class="fas fa-arrow-right"></i>
-                    </button>
-                  </a>
+                  <div class="movement-carousel d-none d-lg-flex">
+                    <a
+                      class="carousel-control-prev arrow"
+                      href="#demo"
+                      data-slide="prev"
+                    >
+                      <button class="btn rounded-circle">
+                        <i class="fas fa-arrow-left"></i>
+                      </button>
+                    </a>
+  
+                    <a
+                      class="carousel-control-next arrow"
+                      href="#demo"
+                      data-slide="next"
+                    >
+                      <button class="btn rounded-circle">
+                        <i class="fas fa-arrow-right"></i>
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
               <!-- end of carsoul -->
 
               <!--news paper  -->
-              <div class="col-xl-4 cl-12 p-0 pr-xl-5 news">
+              <div class="col-xl-4 cl-12 p-0 pr-xl-5 news h-100 mt-3 mt-xl-0">
                 <div class="card" id="navbar-news">
                   <div class="card-header pr-3">النشرة الاخبارية</div>
                   <div class="list-group">
@@ -649,9 +654,106 @@
                         </p>
                       </div>
                     </a>
+                    <a href="#" class=" list-group-item nav-link d-flex p-0">
+                      <div class="list-group-item-action flex-column my-3 mx-1">
+                        <div
+                          class="
+                            d-flex
+                            w-100
+                            flex-row-reverse
+                            justify-content-end
+                          "
+                        >
+                          <p class="news-paper_title">اقتصاد</p>
+                          <small>11:31</small>
+                        </div>
+                        <p class="">
+                          ايستبنيسىنىيس خكتيلنيى يتنيم هختهخ خثهت خستخت خثتب نماه
+                          هاهاها هت هاهاها
+                        </p>
+                      </div>
+                    </a>
+                    <a href="#" class="list-group-item nav-link d-flex p-0">
+                      <div class="list-group-item-action flex-column my-3 mx-1">
+                        <div
+                          class="
+                            d-flex
+                            w-100
+                            flex-row-reverse
+                            justify-content-end
+                          "
+                        >
+                          <p class="news-paper_title">اقتصاد</p>
+                          <small>11:31</small>
+                        </div>
+                        <p class="">
+                          ايستبنيسىنىيس خكتيلنيى يتنيم هختهخ خثهت خستخت خثتب نماه
+                          هاهاها هت هاهاها
+                        </p>
+                      </div>
+                    </a>
+                    <a href="#" class="list-group-item nav-link d-flex p-0">
+                      <div class="list-group-item-action flex-column my-3 mx-1">
+                        <div
+                          class="
+                            d-flex
+                            w-100
+                            flex-row-reverse
+                            justify-content-end
+                          "
+                        >
+                          <p class="news-paper_title">اقتصاد</p>
+                          <small>11:31</small>
+                        </div>
+                        <p class="">
+                          ايستبنيسىنىيس خكتيلنيى يتنيم هختهخ خثهت خستخت خثتب نماه
+                          هاهاها هت هاهاها
+                        </p>
+                      </div>
+                    </a>
+                    <a href="#" class="list-group-item nav-link d-flex p-0">
+                      <div class="list-group-item-action flex-column my-3 mx-1">
+                        <div
+                          class="
+                            d-flex
+                            w-100
+                            flex-row-reverse
+                            justify-content-end
+                          "
+                        >
+                          <p class="news-paper_title">اقتصاد</p>
+                          <small>11:31</small>
+                        </div>
+                        <p class="">
+                          ايستبنيسىنىيس خكتيلنيى يتنيم هختهخ خثهت خستخت خثتب نماه
+                          هاهاها هت هاهاها
+                        </p>
+                      </div>
+                    </a>
+                    <a href="#" class="list-group-item nav-link d-flex p-0">
+                      <div class="list-group-item-action flex-column my-3 mx-1">
+                        <div
+                          class="
+                            d-flex
+                            w-100
+                            flex-row-reverse
+                            justify-content-end
+                          "
+                        >
+                          <p class="news-paper_title">اقتصاد</p>
+                          <small>11:31</small>
+                        </div>
+                        <p class="">
+                          ايستبنيسىنىيس خكتيلنيى يتنيم هختهخ خثهت خستخت خثتب نماه
+                          هاهاها هت هاهاها
+                        </p>
+                      </div>
+                    </a>
                   </div>
-                  <a
+                  <button
                     class="
+                    bg-white
+                    more-news
                       nav-link
                       d-flex
                       justify-content-center
@@ -659,9 +761,9 @@
                     "
                     style="cursor: pointer"
                   >
-                    <p class="ml-3">المزيد</p>
+                    <p class="ml-3 ">المزيد</p>
                     <i class="fas fa-chevron-left mt-1"></i>
-                  </a>
+                  </button>
                 </div>
               </div>
               <!-- end of news paper -->
@@ -672,7 +774,7 @@
         <!-- =  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////
       Main News الاخبارالرئيسيه  - second page     
     //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-        <section class="news-second-section">
+        <section class="news-second-section mt-3 mt-lg-5">
           <div class="container h-100 p-0 ">
             <div class="card-header bg-white">
               <p>الاخبارالرئيسيه</p>
@@ -680,9 +782,14 @@
             <div class="row  bg-white m-0 py-3 p-xl-3 ">
               <div class="col-xl-6 col-12 h-100 first pt-xl-2 px-xl-0 mb-3 m-lg-0">
                 <div class="card ">
-                  <li class="nav-link play play-mid">
+                  <li class="nav-link play play-mid d-none d-sm-inline-block">
                     <i class="fas fa-play"></i>
                   </li>
+                 
+                  <li class="nav-link play play-small d-sm-none d-inline-block">
+                    <i class="fas fa-play"></i>
+                  </li>
+
                   <img
                     class="card-img big-img"
                     src="imgs/first-secImg/download 3.jpeg"
@@ -752,7 +859,7 @@
       third section    the one i hate -_-  
     //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-        <section class="news-third-section">
+        <section class="news-third-section mt-3 mt-lg-5">
           <div class="container h-100 p-0">
             <div class="row h-100 p-0 m-0">
               <!-- left sections -->
@@ -767,8 +874,8 @@
                   <!-- left top section -->
                   <div class="card col-xl-7 col-12 d-flex flex-column  p-0 ">
                     <a href="#" class="nav-link card border border-bottom-1 m-0 ">
-                      <div class="card-display">
-                        <div class="img col-6 " style="position: relative">
+                      <div class=" card-display row">
+                        <div class="img col-xl-6 col-lg-4 col-md-5 col-sm-5 mb-2 m-sm-0 " style="position: relative">
                           <li class="nav-link play play-small">
                             <i class="fas fa-play"></i>
                           </li>
@@ -778,7 +885,7 @@
                             alt="Card image"
                           />
                         </div>
-                        <div class="card-body col-6">
+                        <div class="card-body col-xl-6 col-lg-8 col-md-7 col-sm-7">
                           <h5 class="card-title">
                             "المعجم التاريخي":إطلاق مشروع نهضوي
                           </h5>
@@ -792,15 +899,15 @@
                       </div>
                     </a>
                     <a href="#" class="nav-link card-display border border-bottom-1 pb-4 p-lg-0">
-                      <div class="card-display">
-                        <div class="img col-6">
+                      <div class="card-display row">
+                        <div class="img  col-xl-6 col-lg-4 col-md-5 col-sm-5 m-sm-0 mb-2">
                           <img
                             class="card-img"
                             src="imgs/logo/01.PC-Arabic-Home_MenuExpand-2.png"
                             alt="Card image"
                           />
                         </div>
-                        <div class="card-body col-6">
+                        <div class="card-body col-xl-6 col-lg-8 col-md-7 col-sm-7">
                           <h5 class="card-title">
                             "المعجم التاريخي":إطلاق مشروع نهضوي
                           </h5>
@@ -866,7 +973,7 @@
                       first
                     "
                   >
-                    <div class="card-header text-white">التقارير و الدراسات</div>
+                    <div class="card-header text-white"><p> التقارير و الدراسات    </p> </div>
                     <div class="list-group">
                       <a
                         href="#"
@@ -963,7 +1070,11 @@
                       second
                     "
                   >
-                    <div class="card-header text-white">الأكثر قراءة</div>
+                    <div class="card-header text-white"> <p>
+
+
+
+                   الأكثر قراءة    </p> </div>
                     <div class="list-group">
                       <a
                         href="#"
@@ -1148,10 +1259,10 @@
               </div>
               </div>
               <!-- right sections -->
-              <div class="col-12 col-xl-4 d-flex p-0  m-xl-0 social-media">
-                <div class="row d-flex justify-content-end h-100  m-0">
+              <div class="col-12 col-xl-4 d-flex p-0  m-lg-0 mt-3 social-media">
+                <div class="row d-flex justify-content-end    m-0">
                   <!-- right top -->
-                  <div class="col-xl-11 col-12 social-media-twitter m-lg-0   p-0">
+                  <div class="col-xl-11 col-12 social-media-twitter m-lg-0  bg-white p-0 ">
                     <div class="card-header bg-white">
                       <p>من توتير</p>
                     </div>
@@ -1284,8 +1395,8 @@
                       col-xl-11 col-12
                       bg-white
                       p-0
-                      
-                      m-xl-0 mt-lg-4
+                      m-sm-0
+                      mt-3
                       social-media-instagram
                     "
                   >
@@ -1299,59 +1410,77 @@
                         d-flex
                         
                         flex-column
-                        justify-content-start
+                        justify-content-between
                       "
                     >
-                      <div class="row  p-0 d-flex m-0">
-                        <img
-                          class="img col-4"
-                          src="imgs/logo/01.PC-Arabic-Home_MenuExpand-2.png"
-                          alt=""
-                        />
-                        <img
-                          class="img col-4"
-                          src="imgs/first-secImg/download (1).jpeg"
-                          alt=""
-                        />
-                        <img
-                          class="img col-4"
-                          src="imgs/first-secImg/download 3.jpeg"
-                          alt=""
-                        />
+                      <div class="card-deck  d-flex  m-0">
+                        <div class="card ">
+                          <img
+                            class="img"
+                            src="imgs/logo/01.PC-Arabic-Home_MenuExpand-2.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="card ">
+                          <img
+                            class="img"
+                            src="imgs/first-secImg/download (1).jpeg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="card ">
+                          <img
+                            class="img"
+                            src="imgs/first-secImg/download 3.jpeg"
+                            alt=""
+                          />
+                        </div>
+                        </div>
+                      <div class="card-deck d-flex m-0">
+                        <div class="card">
+                          <img
+                            class="img "
+                            src="imgs/first-secImg/download 3.jpeg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="card">
+                          <img
+                            class="img "
+                            src="imgs/first-secImg/download.jpeg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="card">
+                          <img
+                            class="img "
+                            src="imgs/first-secImg/twitter.jpeg"
+                            alt=""
+                          />
+                        </div>
                       </div>
-                      <div class="row d-flex m-0">
-                        <img
-                          class="img col-4"
-                          src="imgs/first-secImg/download 3.jpeg"
-                          alt=""
-                        />
-                        <img
-                          class="img col-4"
-                          src="imgs/first-secImg/download.jpeg"
-                          alt=""
-                        />
-                        <img
-                          class="img col-4"
-                          src="imgs/first-secImg/twitter.jpeg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="row d-flex m-0">
-                        <img
-                          class="img col-4"
-                          src="imgs/first-secImg/download 3.jpeg"
-                          alt=""
-                        />
-                        <img
-                          class="img col-4"
-                          src="imgs/first-secImg/download (1).jpeg"
-                          alt=""
-                        />
-                        <img
-                          class="img col-4"
-                          src="imgs/first-secImg/download.jpeg"
-                          alt=""
-                        />
+                      <div class="card-deck d-flex m-0">
+                        <div class="card">
+                          <img
+                            class="img"
+                            src="imgs/first-secImg/download 3.jpeg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="card">
+                          <img
+                            class="img "
+                            src="imgs/first-secImg/download (1).jpeg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="card">
+                          <img
+                            class="img "
+                            src="imgs/first-secImg/download.jpeg"
+                            alt=""
+                          />
+                        </div>
                       </div>
                     </div>
                   
@@ -1364,11 +1493,11 @@
         <!-- =  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////
       fourth section  slider  nav  
     //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-        <section class="news-fourth-section  mt-xl-4 card-display">
+        <section class="news-fourth-section  m-0 mt-lg-5 mt-3 card-display">
           <div class="container h-100 bg-white p-0">
-            <nav class="card-header m-0 nav bg-white" id="nav-tab" role="tablist">
+            <nav class="card-header  d-flex flex-row align-items-center m-0 nav bg-white" id="nav-tab" role="tablist">
               <a
-                class=" nav-link"
+                class=" nav-link  d-flex flex-row m-0"
                 id="nav-first-tab"
                 data-toggle="tab"
                 href="#nav-first"
@@ -1376,10 +1505,11 @@
                 aria-controls="nav-first"
                 aria-selected="true"
               >
-                <i class="fas fa-bookmark"></i>اختيارات المحرر
+                <i class="fas fa-bookmark"></i>
+                <p> اختيارات المحرر  </p> 
               </a>
               <a
-                class=" nav-link"
+                class=" nav-link d-flex flex-row m-0"
                 id="nav-second-tab"
                 data-toggle="tab"
                 href="#nav-second"
@@ -1387,7 +1517,9 @@
                 aria-controls="nav-second"
                 aria-selected="false"
               >
-                <i class="fas fa-book-reader"></i>مواضيع قد تعجبك
+              <i class="fas fa-book-reader"></i> <p>
+                مواضيع قد تعجبك
+              </p> 
               </a>
               <!-- </div> -->
             </nav>
@@ -1513,7 +1645,7 @@
         <!-- =  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////
       fifth section     
     //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-        <section class="news-fifth-section ">
+        <section class="news-fifth-section m-0 mt-3 mt-lg-5">
           <div class="container h-100  p-0">
             <div class="row h-100  m-0">
               <!-- img carousel -->
@@ -1612,13 +1744,16 @@
      footer    
   //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-      <section class="arrow-up">
-        <div class="container d-flex justify-content-center">
-          <a href="#">
-            <button class="btn rounded-circle">
-              <i class="fas fa-arrow-up"></i>
-            </button>
-          </a>
+      <section class=" arrow-up">
+        <div class="row w-100 h-100  m-0">
+          <div class="container d-flex align-items-center text-center ">
+            <a href="# ">
+              <button class="btn rounded-circle m-0">
+                <i class="fas fa-arrow-up"></i>
+              </button>
+            </a>
+          </div>
+
         </div>
       </section>
 
@@ -1711,10 +1846,10 @@
           </div>
         </div>
 
-        <div class="row m-0 footer-contact">
-          <div class="container pt-2">
-            <div class="row m-0">
-              <div class="col-lg-6 p-0">
+        <div class="row  m-0 footer-contact">
+          <div class="container-sm container-fluid  pt-2">
+            <div class="row m-0 p-0">
+              <div class="col-lg-6 col-12 p-0 ">
                 <ul class="nav p-0 flex-row justify-content-start">
                   <li class="nav-item">
                     <a href="" class="nav-link"
@@ -1745,12 +1880,12 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-lg-6 m-0  pr-4">
-                <ul class="nav p-0 flex-row justify-content-end">
-                  <li class="nav-item">
+              <div class="col-lg-6 col-12 w-100 m-0 ">
+                <ul class="nav p-0 flex-row w-100 justify-content-end m-0">
+                  <li class="nav-item ">
                     <a href="" class="nav-link text-black"
                       >جميع الحقوق محفوظة &copy; وكالة الأنباء القطرية
-                      <nav class="sm-border"></nav
+                      <nav class="sm-border d-none d-sm-inline-block"></nav
                     ></a>
                   </li>
                   <li class="nav-item">

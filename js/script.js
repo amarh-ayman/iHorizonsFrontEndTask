@@ -25,6 +25,7 @@ $("a").on("click", function (e) {
   // e.preventDefault();
   $(this).not('[data-toggle="tab"]').addClass("active");
 });
+
 $(" .carousel-indicators > li").popover({
   placement: "top",
   trigger: "hover",
@@ -44,6 +45,9 @@ $(" .carousel-indicators > li").popover({
     return `<div class="media"><img src="${$imgsrc}" class="mr-3" alt="Sample Image"><div class="media-body"><p>${$contentOfIndicator}</p></div></div>`;
   },
 });
+$(" .more-news").on("click", function () {
+  $("#navbar-news > .list-group").css("overflow-y", "scroll");
+});
 
 function setMaxWidth() {
   if ($(window).width() >= 1600 && $(window).width() < 1700) {
@@ -54,13 +58,17 @@ function setMaxWidth() {
     width = 0.87;
     left = 9;
   }
-  if ($(window).width() >= 600 && $(window).width() < 1400) {
-    width = 0.89;
+  if ($(window).width() >= 1200 && $(window).width() < 1400) {
+    width = 0.8;
   }
-  if ($(window).width() <= 600) width = 0.95;
+  if ($(window).width() >= 600 && $(window).width() < 1200) {
+    width = 0.6;
+  }
+  if ($(window).width() > 300 && $(window).width() <= 600) width = 0.7;
+  if ($(window).width() <= 300) width = 0.98;
   $(".container").css("maxWidth", $(window).width() * width + "px");
 
-  // alert( width );
+  // alert($(window).width());
   $(".social-media-links").css({
     left: `${width * 10 - width * left}%`,
   });

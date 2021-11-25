@@ -1,22 +1,69 @@
-// @media (min-width: 1200px) {
-//   .container {
-//     padding: 0 !important;
-//     max-width: calc(100% - (216px * 2));
-//   }
-// }
-// @media (max-width: 1200px) {
-//   .container {
-//     padding: 0 !important;
-//     background-color: blue !important;
-//     max-width: calc(100% - (116px * 2));
-//   }
+@media (min-width: 500px) and (max-width: 992px) {
+  h5,
+  .card-title {
+    font-size: 0.88rem !important;
+  }
 
-// @media (min-width: 768px) .container, .container-md, .container-sm {
-//   max-width: 720 px;
-// }
-// @media (max-width: 576px) {
-//   .container {
-//     max-width: calc(100% - 30px);
-//     margin: auto 15px;
-//   }
-// }
+  * {
+    font-size: 0.75rem !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h5,
+  .card-title {
+    font-size: 0.8rem !important;
+  }
+
+  * {
+    font-size: 0.65rem !important;
+  }
+
+  .container {
+    img {
+      //   width: 15rem;
+      //   height: 20rem !important;
+    }
+  }
+  .movement-carousel {
+    li {
+      width: 1.5rem !important;
+      height: 1.5rem !important;
+    }
+    i {
+      font-size: 0.8rem !important;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  h5,
+  .card-title {
+    font-size: 0.9rem !important;
+  }
+  * {
+    font-size: 0.7rem !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h5,
+  .card-title {
+    font-size: 1rem !important;
+  }
+  * {
+    font-size: 0.85rem !important;
+  }
+  .card-header {
+    * {
+      font-size: 1rem !important;
+    }
+  }
+  .carousel-caption {
+    p {
+      font-size: 1.5rem !important;
+    }
+  }
+  .footer {
+    height: 85vh;
+  }
+}

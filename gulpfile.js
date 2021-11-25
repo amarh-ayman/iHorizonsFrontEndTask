@@ -9,14 +9,13 @@ function scssTask() {
   return src("scss/**/*.scss", { sourcemaps: true })
     .pipe(sass())
     .pipe(postcss([cssnano()]))
-    .pipe(dest("dist/css/"))
-    .pipe(browserSync.stream());
+    .pipe(dest("dist/css/", { sourcemaps: "." }));
 }
 
 function jsTask() {
   return src("js/**/*.js", { sourcemaps: true })
     .pipe(terser())
-    .pipe(dest("dist/js/"));
+    .pipe(dest("dist/js/", { sourcemaps: "." }));
 }
 
 function browsersyncServe(cb) {
@@ -37,8 +36,8 @@ function watchTask() {
   watch("*.html", browersyncReload);
   watch(
     ["scss/**/*.scss", "js/**/*.js"],
-    series(scssTask, browersyncReload, browsersyncServe)
+    series(scssTask, jsTask, browersyncReload)
   );
 }
 
-exports.default = series(scssTask, browsersyncServe, watchTask);
+exports.default = series(scssTask, jsTask, browsersyncServe, watchTask);
