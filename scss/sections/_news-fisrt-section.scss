@@ -73,6 +73,7 @@
       &-item {
         height: 100%;
         width: 100%;
+        // transition: ;
         img {
           height: 100%;
           width: 100%;
@@ -165,8 +166,6 @@
 
 .carousel-fade {
   .carousel-item {
-    opacity: 0;
-    transition-duration: 1s ease-out;
-    transition-property: opacity;
+    transition: transform 0.6s ease-in-out;
   }
 }
