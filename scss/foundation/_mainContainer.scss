@@ -9,7 +9,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 576px) {
   h5,
   .card-title {
     font-size: 0.8rem !important;
@@ -24,9 +24,10 @@
       width: 1.5rem !important;
       height: 1.5rem !important;
     }
-    i {
-      font-size: 0.8rem !important;
-    }
+  }
+  .small-box {
+    width: 1.7rem !important;
+    height: 1.2rem !important;
   }
 }
 

@@ -64,8 +64,8 @@ function setMaxWidth() {
   if ($(window).width() >= 600 && $(window).width() < 1200) {
     width = 0.6;
   }
-  if ($(window).width() > 300 && $(window).width() <= 600) width = 0.7;
-  if ($(window).width() <= 300) width = 0.98;
+  if ($(window).width() > 400 && $(window).width() <= 600) width = 0.7;
+  if ($(window).width() <= 400) width = 0.9;
   $(".container").css("maxWidth", $(window).width() * width + "px");
 
   // alert($(window).width());
