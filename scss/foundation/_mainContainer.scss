@@ -19,12 +19,6 @@
     font-size: 0.65rem !important;
   }
 
-  .container {
-    img {
-      //   width: 15rem;
-      //   height: 20rem !important;
-    }
-  }
   .movement-carousel {
     li {
       width: 1.5rem !important;
@@ -65,5 +59,12 @@
   }
   .footer {
     height: 85vh;
+  }
+}
+
+@media (max-width: 300px) {
+  .carousel-indicators li {
+    height: 0.5rem;
+    width: 0.5rem;
   }
 }
